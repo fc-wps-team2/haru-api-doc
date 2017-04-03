@@ -8,11 +8,11 @@
 
 ## 개발환경
 
-Python
+Python 3.5.3
 
-Django
+Django 1.10.6
 
-Django REST Framework
+Django REST Framework 3.6.2
 
 ## 배포환경
 
