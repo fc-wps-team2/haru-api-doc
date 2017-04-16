@@ -6,7 +6,7 @@ Create user
 
 **Method :**`POST`
 
-**EX :**`https://<domain name>/api/v1/users`
+**URL Example :**`https://<domain name>/api/v1/users`
 
 ## Request {#request}
 
