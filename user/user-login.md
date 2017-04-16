@@ -16,8 +16,6 @@ Login
 
 ### Body {#body}
 
-#### Parameters {#parameters}
-
 * email\(required\) : 이메일, String
 
 * password\(required\) : 비밀번호, String
@@ -30,7 +28,7 @@ Login
 
     ```
     {
-    "token": "a35b9eb7e90d9ecdb5567183fb13f6b813cf2547"
+    "token": "a35b9eb7e90d9ecdb5567183fb13f6b813cf2547"
     }
     ```
 
