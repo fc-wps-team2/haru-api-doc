@@ -8,11 +8,11 @@
 
 ## 개발환경
 
-Python 3.5.3
+Python
 
-Django 1.10.6
+Django
 
-Django REST Framework 3.6.2
+Django REST Framework
 
 ## 배포환경
 
@@ -21,8 +21,4 @@ AWS Elastic Beanstalk
 Amazon RDS \(PostgreSQL\)
 
 Amazon S3
-
----
-
-README.md
 
