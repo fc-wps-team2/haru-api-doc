@@ -36,7 +36,7 @@ Django REST Framework
 
 AWS EC2
 
-### v2
+### v2 \(예정\)
 
 AWS Elastic Beanstalk
 
@@ -44,7 +44,9 @@ Amazon RDS
 
 Amazon S3
 
+### v3\(예정\)
 
+Heroku
 
 ## 프로젝트 참여자
 

@@ -4,15 +4,19 @@ Get Post List
 
 * PAGE\_SIZE : 9 \(한 페이지에 9개의 글 표시\)
 
-* 첫 페이지의 previous 값은 null
+* 첫 페이지 응답결과의  previous 값은 null
 
-* 마지막 페이지의 next 값은 null
+* 마지막 페이지 응답결의 next 값은 null
 
 **URL :**`/posts`
 
 **Method :**`GET`
 
-**URL example :**`http://<domain name>/api/v1/posts`
+**URL example :**
+
+`http://<domain name>/api/v1/posts`
+
+`http://<domain name>/api/v1/posts?page=2`
 
 ## Request {#request}
 
@@ -20,13 +24,15 @@ Get Post List
 
 ```
 {
-    "token": "a35b9eb7e90d9ecdb5567183fb13f6b813cf2547"
+    "token": "a35b9eb7e90d9ecdb5567183fb13f6b813cf2547"
 }
 ```
 
 ### Body {#body}
 
-`None`
+* `None`: 첫번째 페이지 요청
+
+* `page`: 페이지 번호, 해당 페이지 요청
 
 ## Responses {#responses}
 

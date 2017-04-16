@@ -1,6 +1,7 @@
 # Summary
 
 * [Summary](/README.md)
+* [API Design](api-design.md)
 
 ## User
 
@@ -17,6 +18,4 @@
 * [글 삭제](/post/delete-post.md)
 * [글 목록보기](/post/get-post-list.md)
 * [글 상세보기](/post/get-post-detail.md)
-
-
 

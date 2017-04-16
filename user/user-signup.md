@@ -1,6 +1,6 @@
 # 회원가입 {#회원가입}
 
-Create user
+Create User
 
 **URL :**`/users`
 
