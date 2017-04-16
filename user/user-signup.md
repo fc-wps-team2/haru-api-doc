@@ -30,7 +30,7 @@ Create user
 
     ```
     {
-    "token": "a35b9eb7e90d9ecdb5567183fb13f6b813cf2547"
+    "token": "a35b9eb7e90d9ecdb5567183fb13f6b813cf2547"
     }
     ```
 
