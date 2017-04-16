@@ -6,7 +6,7 @@ Update Post
 
 **Method :**`PATCH`
 
-**EX :**`https://<domain name>/api/v1/posts/{post_id}`
+**URL example :**`https://<domain name>/api/v1/posts/{post_id}`
 
 ## Request {#request}
 
