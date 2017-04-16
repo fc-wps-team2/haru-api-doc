@@ -16,8 +16,6 @@ Create user
 
 ### Body {#body}
 
-#### Parameters {#parameters}
-
 * email\(required\) : 이메일, String
 
 * password\(required\) : 비밀번호, String
