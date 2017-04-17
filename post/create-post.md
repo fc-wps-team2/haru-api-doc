@@ -14,7 +14,9 @@ Create Post
 
 -   key : Authorization
 -   value : Token `<token key value>`
+
     example :
+
     `Token a35b9eb7e90d9ecdb5567183fb13f6b813cf2547`
 
 ### Body
