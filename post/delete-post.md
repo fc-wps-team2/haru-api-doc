@@ -1,40 +1,35 @@
-# 글 삭제 {#글-삭제}
+# 글 삭제
 
 Delete Post
 
-**URL :**`/posts/{post_id}`
+**URL :** `/posts/{post_id}`
 
-**Method :**`DELETE`
+**Method :** `DELETE`
 
-**URL example :**`https://<domain name>/api/posts/{post_id}`
+**URL example :** `https://<domain name>/api/posts/{post_id}`
 
-## Request {#request}
+## Request
 
-### Headers {#headers}
+### Headers
 
-```
-{
-    "token": "a35b9eb7e90d9ecdb5567183fb13f6b813cf2547"
-}
-```
+    {
+        "token": "a35b9eb7e90d9ecdb5567183fb13f6b813cf2547"
+    }
 
-### Body {#body}
+### Body
 
 `None`
 
-## Responses {#responses}
+## Responses
 
-* HTTP Status : 204 - No Content
+-   HTTP Status : 204 - No Content
 
-  * 글 삭제 성공
+    -   글 삭제 성공
 
-* HTTP Status : 400 - Bad Request
+-   HTTP Status : 400 - Bad Request
 
-  * 유효하지 않은 user\_id로 요청함
+    -   유효하지 않은 user_id로 요청함
 
-* HTTP Status : 401 - Unauthorized
+-   HTTP Status : 401 - Unauthorized
 
-  * 유효하지 않은 Token으로 요청함
-
-
-
+    -   유효하지 않은 Token으로 요청함

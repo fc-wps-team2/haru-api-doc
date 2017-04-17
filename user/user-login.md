@@ -1,42 +1,37 @@
-# 로그인 {#로그인}
+# 로그인
 
 Login
 
-**URL :**`/users/login`
+**URL :** `/users/login`
 
-**Method :**`GET`
+**Method :** `GET`
 
-**URL example :**`https://<domain name>/api/users/login`
+**URL example :** `https://<domain name>/api/users/login`
 
-**Running URL :**`http://haru-eb.ap-northeast-2.elasticbeanstalk.com/login/`
+**Running URL :** `http://haru-eb.ap-northeast-2.elasticbeanstalk.com/login/`
 
-## Request {#request}
+## Request
 
-### Headers {#headers}
+### Headers
 
 `None`
 
-### Body {#body}
+### Body
 
-* email\(required\) : 이메일, String
+-   email(required) : 이메일, String
 
-* password\(required\) : 비밀번호, String
+-   password(required) : 비밀번호, String
 
-## Responses {#responses}
+## Responses
 
-* HTTP Status : 200 - OK
+-   HTTP Status : 200 - OK
 
-  * Body
+    -   Body
 
-    ```
-    {
-        "token": "a35b9eb7e90d9ecdb5567183fb13f6b813cf2547"
-    }
-    ```
+            {
+                "token": "a35b9eb7e90d9ecdb5567183fb13f6b813cf2547"
+            }
 
-* HTTP Status : 400 - Bad Request
+-   HTTP Status : 400 - Bad Request
 
-  * 필수항목 입력값 누락 : 이메일, 비밀번호
-
-
-
+    -   필수항목 입력값 누락 : 이메일, 비밀번호

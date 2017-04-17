@@ -1,36 +1,31 @@
-# 로그아웃 {#로그아웃}
+# 로그아웃
 
 Logout
 
-**URL :**`/users/logout`
+**URL :** `/users/logout`
 
-**Method :**`POST`
+**Method :** `POST`
 
-**URL example :**`https://<domain name>/api/users/logout`
+**URL example :** `https://<domain name>/api/users/logout`
 
-**Running URL :**`http://haru-eb.ap-northeast-2.elasticbeanstalk.com/logout/`
+**Running URL :** `http://haru-eb.ap-northeast-2.elasticbeanstalk.com/logout/`
 
-## Request {#request}
+## Request
 
-### Headers {#headers}
+### Headers
 
-```
-{
-    "token": "a35b9eb7e90d9ecdb5567183fb13f6b813cf2547"
-}
-```
+    {
+        "token": "a35b9eb7e90d9ecdb5567183fb13f6b813cf2547"
+    }
 
-### Body {#body}
+### Body
 
 `None`
 
-## Responses {#responses}
+## Responses
 
-* HTTP Status : 200 - OK
+-   HTTP Status : 200 - OK
 
-* HTTP Status : 401 - Unauthorized
+-   HTTP Status : 401 - Unauthorized
 
-  * 유효하지 않은 Token으로 요청함
-
-
-
+    -   유효하지 않은 Token으로 요청함

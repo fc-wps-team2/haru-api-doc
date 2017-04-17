@@ -1,51 +1,44 @@
-# 사용자 프로필 수정 {#사용자-프로필-수정}
+# 사용자 프로필 수정
 
 Update User Profile
 
-**URL :**`/users`
+**URL :** `/users`
 
-**Method :**`PATCH`
+**Method :** `PATCH`
 
-**URL example :**`https://<domain name>/api/users`
+**URL example :** `https://<domain name>/api/users`
 
-## Request {#request}
+## Request
 
-### Headers {#headers}
+### Headers
 
-```
-{
-    "token": "a35b9eb7e90d9ecdb5567183fb13f6b813cf2547"
-}
-```
-
-### Body {#body}
-
-* email\(required\) : 이메일, String
-
-* password\(required\) : 비밀번호, String
-
-## Responses {#responses}
-
-* HTTP Status : 200 - OK
-
-  * Body
-
-    ```
     {
-        "id": 1,
-        "email":"<email>",
-        "password": "<password>",
-        "created_date": "2017-04-14T11:06:21.000Z"
+        "token": "a35b9eb7e90d9ecdb5567183fb13f6b813cf2547"
     }
-    ```
 
-* HTTP Status : 400 - Bad Request
+### Body
 
-  * 필수항목 입력값 누락 : 이메일, 비밀번호
+-   email(required) : 이메일, String
 
-* HTTP Status : 401 - Unauthorized
+-   password(required) : 비밀번호, String
 
-  * 유효하지 않은 Token으로 요청함
+## Responses
 
+-   HTTP Status : 200 - OK
 
+    -   Body
 
+            {
+                "id": 1,
+                "email":"<email>",
+                "password": "<password>",
+                "created_date": "2017-04-14T11:06:21.000Z"
+            }
+
+-   HTTP Status : 400 - Bad Request
+
+    -   필수항목 입력값 누락 : 이메일, 비밀번호
+
+-   HTTP Status : 401 - Unauthorized
+
+    -   유효하지 않은 Token으로 요청함
