@@ -4,7 +4,7 @@ Login
 
 **URL :** `/users/login`
 
-**Method :** `GET`
+**Method :** `POST`
 
 **URL example :** `https://<domain name>/api/users/login`
 
