@@ -8,6 +8,8 @@ Create User
 
 **URL example :**`https://<domain name>/api/v1/users`
 
+**Running URL : **`http://haru-eb.ap-northeast-2.elasticbeanstalk.com/signup/`
+
 ## Request {#request}
 
 ### Headers {#headers}
