@@ -14,9 +14,9 @@ Get Post List
 
 **URL example :**
 
-`http://<domain name>/api/v1/posts`
+`http://<domain name>/api/posts`
 
-`http://<domain name>/api/v1/posts?page=2`
+`http://<domain name>/api/posts?page=2`
 
 ## Request {#request}
 
@@ -44,7 +44,7 @@ Get Post List
     {
         "count": 11,
         "next": null,
-        "previous": "http://<domain name>/api/v1/posts?page=1",
+        "previous": "http://<domain name>/api/posts?page=1",
         "results": [
             {
                 "id": 10,

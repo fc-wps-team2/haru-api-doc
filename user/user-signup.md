@@ -6,7 +6,7 @@ Create User
 
 **Method :**`POST`
 
-**URL example :**`https://<domain name>/api/v1/users`
+**URL example :**`https://<domain name>/api/users`
 
 **Running URL : **`http://haru-eb.ap-northeast-2.elasticbeanstalk.com/signup/`
 

@@ -16,11 +16,11 @@
 
 형식 :
 
-`https://<domain name>/api/v1`
+`https://<domain name>/api`
 
 ex\)
 
-`https://haru.jeeyong.kr/api/v1`
+`https://haru.jeeyong.kr/api`
 
 ## 개발환경
 

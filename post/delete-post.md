@@ -6,7 +6,7 @@ Delete Post
 
 **Method :**`DELETE`
 
-**URL example :**`https://<domain name>/api/v1/posts/{post_id}`
+**URL example :**`https://<domain name>/api/posts/{post_id}`
 
 ## Request {#request}
 

@@ -6,7 +6,7 @@ Create Post
 
 **Method :**`POST`
 
-**URL example :**`https://<domain name>/api/v1/posts`
+**URL example :**`https://<domain name>/api/posts`
 
 ## Request {#request}
 

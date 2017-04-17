@@ -6,7 +6,7 @@ Get User Profile
 
 **Method :**`GET`
 
-**URL example :**`https://<domain name>/api/v1/users`
+**URL example :**`https://<domain name>/api/users`
 
 ## Request {#request}
 
@@ -14,7 +14,7 @@ Get User Profile
 
 ```
 {
-    "token": "a35b9eb7e90d9ecdb5567183fb13f6b813cf2547"
+    "token": "a35b9eb7e90d9ecdb5567183fb13f6b813cf2547"
 }
 ```
 
@@ -30,10 +30,10 @@ Get User Profile
 
     ```
     {
-        "id": 1,
+        "id": 1,
         "email":"<email>",
-        "password": "<password>",
-        "created_date": "2017-04-14T11:06:21.000Z"
+        "password": "<password>",
+        "created_date": "2017-04-14T11:06:21.000Z"
     }
     ```
 

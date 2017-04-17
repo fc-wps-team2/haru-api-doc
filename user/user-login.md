@@ -6,7 +6,7 @@ Login
 
 **Method :**`GET`
 
-**URL example :**`https://<domain name>/api/v1/users/login`
+**URL example :**`https://<domain name>/api/users/login`
 
 **Running URL :**`http://haru-eb.ap-northeast-2.elasticbeanstalk.com/login/`
 
