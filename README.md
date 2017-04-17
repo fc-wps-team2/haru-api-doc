@@ -1,8 +1,6 @@
-# Project "Haru" API Documentation
+# Project "Haru" API Documentation {#project-haru-api-documentation}
 
----
-
-## 개요
+## 개요 {#개요}
 
 패스트캠퍼스 팀프로젝트 "하루한장"
 
@@ -12,63 +10,64 @@
 
 변경사항 발생 시 계속 업데이트 됩니다.
 
-## API URL
+## API URL {#api-url}
 
-형식 :
+형식 :`http://<domain name="">/api</domain>`
 
-`https://<domain name>/api`
+URL Example :`https://haru.jeeyong.kr/api`
 
-ex\)
+## 개발환경 {#개발환경}
 
-`https://haru.jeeyong.kr/api`
+* Python
 
-## 개발환경
+* Django
 
-Python
+* Django REST Framework
 
-Django
+## 배포환경 {#배포환경}
 
-Django REST Framework
+### v1 {#v1}
 
-## 배포환경
+* Server : AWS EC2
 
-### v1
+### v2 \(예정\) {#v2-예정}
 
-AWS EC2
+* Server : AWS Elastic Beanstalk
 
-### v2 \(예정\)
+* DB : Amazon RDS
 
-AWS Elastic Beanstalk
+* Storage : Amazon S3
 
-Amazon RDS
+### v3\(예정\) {#v3예정}
 
-Amazon S3
+* Server : Heroku
 
-### v3\(예정\)
+## 프로젝트 참여자 {#프로젝트-참여자}
 
-Heroku
-
-## 프로젝트 참여자
-
-### Android
+### Android {#android}
 
 * 이충열
 
-### Back-end
+### Back-end {#back-end}
 
 * 노지용
+
 * 변영철
 
-### Front-end
+### Front-end {#front-end}
 
 * 변승환
+
 * 송낙현
+
 * 이희찬
 
-### IOS
+### IOS {#ios}
 
 * 여상민
+
 * 조백진
+
 * 최원석
 
 
