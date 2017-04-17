@@ -8,6 +8,8 @@ Login
 
 **URL example :**`https://<domain name>/api/v1/users/login`
 
+**Running URL :**`http://haru-eb.ap-northeast-2.elasticbeanstalk.com/login/`
+
 ## Request {#request}
 
 ### Headers {#headers}
