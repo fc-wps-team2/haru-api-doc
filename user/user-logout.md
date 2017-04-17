@@ -8,13 +8,15 @@ Logout
 
 **URL example :**`https://<domain name>/api/v1/users/logout`
 
+**Running URL :**`http://haru-eb.ap-northeast-2.elasticbeanstalk.com/logout/`
+
 ## Request {#request}
 
 ### Headers {#headers}
 
 ```
 {
-    "token": "a35b9eb7e90d9ecdb5567183fb13f6b813cf2547"
+    "token": "a35b9eb7e90d9ecdb5567183fb13f6b813cf2547"
 }
 ```
 
