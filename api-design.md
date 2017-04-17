@@ -2,7 +2,7 @@
 
 ## Mindmap 을 이용한 API Design
 
-![](/assets/fc-team2-api-design-20170417-01.png)
+![](/assets/fc-team2-api-design-20170417-02.png)
 
 ## Restlet Studio 를 이용한 API Design
 
