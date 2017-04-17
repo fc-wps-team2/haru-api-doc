@@ -2,6 +2,7 @@
 
 * [Summary](/README.md)
 * [API Design](api-design.md)
+* [Document History](document-history.md)
 
 ## User
 
