@@ -23,7 +23,7 @@ Create User
 ### Body
 
 key      | value | type   | descript
--- | -- | -- | --
+-------- | ----- | ------ | --------
 email    |       | string | 필수
 password |       | string | 필수
 
@@ -46,12 +46,12 @@ password |       | string | 필수
 
     ```
     {
-        "email": [
-          "This field may not be blank."
-        ],
-        "password": [
-          "This field may not be blank."
-        ]
+      "email": [
+        "This field may not be blank."
+      ],
+      "password": [
+        "This field may not be blank."
+      ]
     }
     ```
 
