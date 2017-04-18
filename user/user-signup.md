@@ -55,12 +55,12 @@ key          | value           | type   | description
     }
     ```
 
-- 동일한 정보를 가지는 사용자가 이미 존재할 경우
+  - 동일한 정보를 가지는 사용자가 이미 존재할 경우
 
-  ```json
-  {
-      "email": [
-        "This field must be unique."
-      ]
-  }
-  ```
+    ```json
+    {
+        "email": [
+          "This field must be unique."
+        ]
+    }
+    ```
