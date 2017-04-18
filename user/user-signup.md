@@ -22,9 +22,10 @@ Create User
 
 ### Body
 
--   email(required) : 이메일, String
-
--   password(required) : 비밀번호, String
+| key      | value | type   | descript |
+| -------- | ----- | ------ | -------- |
+| email    | -     | string | 필수       |
+| password | -     | string | 필수       |
 
 ## Responses
 
@@ -33,13 +34,27 @@ Create User
     -   Body
 
             {
-                "token": "a35b9eb7e90d9ecdb5567183fb13f6b813cf2547"
+                "id": 1,
+                "email": "<email>"
             }
 
 -   HTTP Status : 400 - Bad Request
 
     -   필수항목 입력값 누락 : 이메일, 비밀번호
 
--   HTTP Status : 409 - Conflict
+            {
+              "email": [
+                "This field may not be blank."
+              ],
+              "password": [
+                "This field may not be blank."
+              ]
+            }
 
     -   동일한 정보를 가지는 사용자가 이미 존재할 경우
+
+            {
+              "email": [
+                "This field must be unique."
+              ]
+            }
