@@ -12,17 +12,22 @@ Update User Profile
 
 ### Headers
 
-- key : Authorization
-- value : Token `<token key value>`
+key           | value
+------------- | -------------------------
+Authorization | Token `<token key value>`
 
-  example :
+**example :**
 
-  `Token a35b9eb7e90d9ecdb5567183fb13f6b813cf2547`
+key           | value
+------------- | ------------------------------------------------
+Authorization | `Token a35b9eb7e90d9ecdb5567183fb13f6b813cf2547`
 
 ### Body
 
-- email(required) : 이메일, String
-- password(required) : 비밀번호, String
+key          | value           | type   | description
+------------ | --------------- | ------ | -----------
+**email**    | (user email)    | string | 필수
+**password** | (user password) | string | 필수
 
 ## Responses
 
@@ -30,7 +35,7 @@ Update User Profile
 
   - Body
 
-    ```
+    ```json
     {
       "id": 1,
       "email":"<email>",

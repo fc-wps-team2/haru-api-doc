@@ -22,7 +22,7 @@ key           | value
 ------------- | -------------------------
 Authorization | Token `<token key value>`
 
-example :
+**example :**
 
 key           | value
 ------------- | ------------------------------------------------
@@ -36,7 +36,7 @@ Authorization | `Token a35b9eb7e90d9ecdb5567183fb13f6b813cf2547`
 
 - HTTP Status : 200 - OK
 
-  ```
+  ```json
   {
     "detail": "Log-Out Success"
   }
@@ -46,7 +46,7 @@ Authorization | `Token a35b9eb7e90d9ecdb5567183fb13f6b813cf2547`
 
   - Headers 에 Token 값을 포함하여 요청하지 않았을 경우, key 이름 또는 값 형식이 잘못되었을 경우
 
-    ```
+    ```json
     {
       "detail": "Authentication credentials were not provided."
     }
@@ -54,7 +54,7 @@ Authorization | `Token a35b9eb7e90d9ecdb5567183fb13f6b813cf2547`
 
   - 유효하지 않은 Token 값으로 요청
 
-    ```
+    ```json
     {
       "detail": "Invalid token."
     }

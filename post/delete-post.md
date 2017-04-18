@@ -12,12 +12,15 @@ Delete Post
 
 ### Headers
 
--   key : Authorization
--   value : Token `<token key value>`
+key           | value
+------------- | -------------------------
+Authorization | Token `<token key value>`
 
-    example :
+**example :**
 
-    `Token a35b9eb7e90d9ecdb5567183fb13f6b813cf2547`
+key           | value
+------------- | ------------------------------------------------
+Authorization | `Token a35b9eb7e90d9ecdb5567183fb13f6b813cf2547`
 
 ### Body
 
@@ -25,14 +28,14 @@ Delete Post
 
 ## Responses
 
--   HTTP Status : 204 - No Content
+- HTTP Status : 204 - No Content
 
-    -   글 삭제 성공
+  - 글 삭제 성공
 
--   HTTP Status : 400 - Bad Request
+- HTTP Status : 400 - Bad Request
 
-    -   유효하지 않은 user_id로 요청함
+  - 유효하지 않은 user_id로 요청함
 
--   HTTP Status : 401 - Unauthorized
+- HTTP Status : 401 - Unauthorized
 
-    -   유효하지 않은 Token으로 요청함
+  - 유효하지 않은 Token으로 요청함

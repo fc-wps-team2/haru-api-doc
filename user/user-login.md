@@ -22,10 +22,10 @@ Login
 
 ### Body
 
-key      | value | type   | descript
--------- | ----- | ------ | --------
-email    |       | string | 필수
-password |       | string | 필수
+key          | value           | type   | description
+------------ | --------------- | ------ | -----------
+**email**    | (user email)    | string | 필수
+**password** | (user password) | string | 필수
 
 ## Responses
 
@@ -33,7 +33,7 @@ password |       | string | 필수
 
   - Body
 
-    ```
+    ```json
     {
       "key": "a35b9eb7e90d9ecdb5567183fb13f6b813cf2547"
     }
@@ -43,7 +43,7 @@ password |       | string | 필수
 
   - 필수항목 입력값 누락 : 이메일, 비밀번호
 
-    ```
+    ```json
     {
       "email": [
         "This field may not be blank."

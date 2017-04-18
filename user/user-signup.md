@@ -22,10 +22,10 @@ Create User
 
 ### Body
 
-key      | value | type   | descript
--------- | ----- | ------ | --------
-email    |       | string | 필수
-password |       | string | 필수
+key          | value           | type   | description
+------------ | --------------- | ------ | -----------
+**email**    | (user email)    | string | 필수
+**password** | (user password) | string | 필수
 
 ## Responses
 
@@ -33,7 +33,7 @@ password |       | string | 필수
 
   - Body
 
-    ```
+    ```json
     {
       "id": 1,
       "email": "<email>"
@@ -44,7 +44,7 @@ password |       | string | 필수
 
   - 필수항목 입력값 누락 : 이메일, 비밀번호
 
-    ```
+    ```json
     {
       "email": [
         "This field may not be blank."
@@ -55,12 +55,12 @@ password |       | string | 필수
     }
     ```
 
-  - 동일한 정보를 가지는 사용자가 이미 존재할 경우
+- 동일한 정보를 가지는 사용자가 이미 존재할 경우
 
-    ```
-    {
-        "email": [
-          "This field must be unique."
-        ]
-    }
-    ```
+  ```json
+  {
+      "email": [
+        "This field must be unique."
+      ]
+  }
+  ```

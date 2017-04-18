@@ -12,9 +12,9 @@
 
 ## API URL
 
-형식 : `http://<domain name>/api</domain>`
+**형식** : `https://<domain name>/`
 
-URL Example : `https://haru.jeeyong.kr/api`
+**Example** : `https://haru.ycsinabro.com/`
 
 ## 개발환경
 
