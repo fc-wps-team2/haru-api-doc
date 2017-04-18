@@ -18,54 +18,46 @@ URL Example : `https://haru.jeeyong.kr/api`
 
 ## 개발환경
 
--   Python
-
--   Django
-
--   Django REST Framework
+- Python
+- Django
+- Django REST Framework
 
 ## 배포환경
 
 ### v1
 
--   Server : AWS EC2
+- Server : Amazon EC2
+- DB : Amazon RDS (PostgreSQL)
 
 ### v2 (예정)
 
--   Server : AWS Elastic Beanstalk
-
--   DB : Amazon RDS
-
--   Storage : Amazon S3
+- Server : AWS Elastic Beanstalk
+- DB : Amazon RDS (PostgreSQL)
+- Storage : Amazon S3
 
 ### v3(예정)
 
--   Server : Heroku
+- Server : Heroku
 
 ## 프로젝트 참여자
 
 ### Android
 
--   이충열
+- 이충열
 
 ### Back-end
 
--   노지용
-
--   변영철
+- 노지용
+- 변영철
 
 ### Front-end
 
--   변승환
-
--   송낙현
-
--   이희찬
+- 변승환
+- 송낙현
+- 이희찬
 
 ### IOS
 
--   여상민
-
--   조백진
-
--   최원석
+- 여상민
+- 조백진
+- 최원석

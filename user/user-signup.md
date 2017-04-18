@@ -22,39 +22,45 @@ Create User
 
 ### Body
 
-| key      | value | type   | descript |
-| -------- | ----- | ------ | -------- |
-| email    | -     | string | 필수       |
-| password | -     | string | 필수       |
+key      | value | type   | descript
+-------- | ----- | ------ | --------
+email    |       | string | 필수
+password |       | string | 필수
 
 ## Responses
 
--   HTTP Status : 201 - Created
+- HTTP Status : 201 - Created
 
-    -   Body
+  - Body
 
-            {
-                "id": 1,
-                "email": "<email>"
-            }
+    ```
+    {
+      "id": 1,
+      "email": "<email>"
+    }
+    ```
 
--   HTTP Status : 400 - Bad Request
+- HTTP Status : 400 - Bad Request
 
-    -   필수항목 입력값 누락 : 이메일, 비밀번호
+  - 필수항목 입력값 누락 : 이메일, 비밀번호
 
-            {
-              "email": [
-                "This field may not be blank."
-              ],
-              "password": [
-                "This field may not be blank."
-              ]
-            }
+    ```
+    {
+        "email": [
+          "This field may not be blank."
+        ],
+        "password": [
+          "This field may not be blank."
+        ]
+    }
+    ```
 
-    -   동일한 정보를 가지는 사용자가 이미 존재할 경우
+  - 동일한 정보를 가지는 사용자가 이미 존재할 경우
 
-            {
-              "email": [
-                "This field must be unique."
-              ]
-            }
+    ```
+    {
+        "email": [
+          "This field must be unique."
+        ]
+    }
+    ```

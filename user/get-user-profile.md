@@ -12,12 +12,12 @@ Get User Profile
 
 ### Headers
 
--   key : Authorization
--   value : Token `<token key value>`
+- key : Authorization
+- value : Token `<token key value>`
 
-    example :
+  example :
 
-    `Token a35b9eb7e90d9ecdb5567183fb13f6b813cf2547`
+  `Token a35b9eb7e90d9ecdb5567183fb13f6b813cf2547`
 
 ### Body
 
@@ -25,17 +25,19 @@ Get User Profile
 
 ## Responses
 
--   HTTP Status : 200 - OK
+- HTTP Status : 200 - OK
 
-    -   Body
+  - Body
 
-            {
-                "id": 1,
-                "email":"<email>",
-                "password": "<password>",
-                "created_date": "2017-04-14T11:06:21.000Z"
-            }
+    ```
+    {
+      "id": 1,
+      "email":"<email>",
+      "password": "<password>",
+      "created_date": "2017-04-14T11:06:21.000Z"
+    }
+    ```
 
--   HTTP Status : 401 - Unauthorized
+- HTTP Status : 401 - Unauthorized
 
-    -   유효하지 않은 Token으로 요청함
+  - 유효하지 않은 Token으로 요청함

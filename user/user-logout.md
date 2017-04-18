@@ -18,15 +18,15 @@ Logout
 
 ### Headers
 
-| key           | value                     |
-| ------------- | ------------------------- |
-| Authorization | Token `<token key value>` |
+key           | value
+------------- | -------------------------
+Authorization | Token `<token key value>`
 
 example :
 
-| key           | value                                            |
-| ------------- | ------------------------------------------------ |
-| Authorization | `Token a35b9eb7e90d9ecdb5567183fb13f6b813cf2547` |
+key           | value
+------------- | ------------------------------------------------
+Authorization | `Token a35b9eb7e90d9ecdb5567183fb13f6b813cf2547`
 
 ### Body
 
@@ -34,22 +34,28 @@ example :
 
 ## Responses
 
--   HTTP Status : 200 - OK
+- HTTP Status : 200 - OK
 
-        {
-            "detail": "Log-Out Success"
-        }
+  ```
+  {
+    "detail": "Log-Out Success"
+  }
+  ```
 
--   HTTP Status : 401 - Unauthorized
+- HTTP Status : 401 - Unauthorized
 
-    -   Headers 에 Token 값을 포함하여 요청하지 않았을 경우, key 이름 또는 값 형식이 잘못되었을 경우
+  - Headers 에 Token 값을 포함하여 요청하지 않았을 경우, key 이름 또는 값 형식이 잘못되었을 경우
 
-            {
-                "detail": "Authentication credentials were not provided."
-            }
+    ```
+    {
+      "detail": "Authentication credentials were not provided."
+    }
+    ```
 
-    -   유효하지 않은 Token 값으로 요청
+  - 유효하지 않은 Token 값으로 요청
 
-            {
-                "detail": "Invalid token."
-            }
+    ```
+    {
+      "detail": "Invalid token."
+    }
+    ```
