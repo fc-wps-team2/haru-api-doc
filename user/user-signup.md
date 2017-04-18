@@ -2,13 +2,17 @@
 
 Create User
 
-**URL :** `/users`
+**URL :** `/signup/`
 
 **Method :** `POST`
 
-**URL example :** `https://<domain name>/api/users`
+**URL example :** `https://<domain name>/singup/`
 
-**Running URL :** `http://haru-eb.ap-northeast-2.elasticbeanstalk.com/signup/`
+**Running URL :**
+
+`http://haru-eb.ap-northeast-2.elasticbeanstalk.com/signup/`
+
+`https://haru.ycsinabro.com/singup/`
 
 ## Request
 

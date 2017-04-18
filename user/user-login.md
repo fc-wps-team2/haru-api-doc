@@ -2,13 +2,17 @@
 
 Login
 
-**URL :** `/users/login`
+**URL :** `/login/`
 
 **Method :** `POST`
 
-**URL example :** `https://<domain name>/api/users/login`
+**URL example :** `https://<domain name>/login/`
 
-**Running URL :** `http://haru-eb.ap-northeast-2.elasticbeanstalk.com/login/`
+**Running URL :**
+
+`http://haru-eb.ap-northeast-2.elasticbeanstalk.com/login/`
+
+`https://haru.ycsinabro.com/login/`
 
 ## Request
 
@@ -34,4 +38,6 @@ Login
 
 -   HTTP Status : 400 - Bad Request
 
-    -   필수항목 입력값 누락 : 이메일, 비밀번호
+        -   필수항목 입력값 누락 : 이메일, 비밀번호
+
+    �

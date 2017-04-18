@@ -2,13 +2,17 @@
 
 Logout
 
-**URL :** `/users/logout`
+**URL :** `/logout/`
 
 **Method :** `POST`
 
-**URL example :** `https://<domain name>/api/users/logout`
+**URL example :** `https://<domain name>/logout/`
 
-**Running URL :** `http://haru-eb.ap-northeast-2.elasticbeanstalk.com/logout/`
+**Running URL :**
+
+`http://haru-eb.ap-northeast-2.elasticbeanstalk.com/logout/`
+
+`https://haru.ycsinabro.com/logout/`
 
 ## Request
 
