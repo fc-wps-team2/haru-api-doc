@@ -23,7 +23,7 @@ Create User
 ### Body
 
 key      | value | type   | descript
--------- | ----- | ------ | --------
+-- | -- | -- | --
 email    |       | string | 필수
 password |       | string | 필수
 
