@@ -38,11 +38,13 @@ Authorization | `Token a35b9eb7e90d9ecdb5567183fb13f6b813cf2547`
 
 - HTTP Status : 200 - OK
 
-  ```json
-  {
-    "detail": "Log-Out Success"
-  }
-  ```
+  - 로그아웃 성공
+
+    ```json
+    {
+      "detail": "Log-Out Success"
+    }
+    ```
 
 - HTTP Status : 401 - Unauthorized
 

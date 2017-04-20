@@ -33,7 +33,7 @@ key          | value           | type   | description
 
 - HTTP Status : 201 - Created
 
-  - Body
+  - 회원가입 성공, 사용자 생성 성공
 
     ```json
     {

@@ -48,7 +48,7 @@ image      | (이미지)     | File    |                                        
 
 - HTTP Status : 201 - Created
 
-  - Body
+  - 글 작성 성공, 글 생성 성공
 
     ```json
     {

@@ -36,33 +36,20 @@ Authorization | `Token a35b9eb7e90d9ecdb5567183fb13f6b813cf2547`
 
 ### Body
 
-key          | value           | type   | description
------------- | --------------- | ------ | -----------
-**email**    | (user email)    | string | 필수
-**password** | (user password) | string | 필수
+key   | value        | type   | description
+----- | ------------ | ------ | -----------
+email | (user email) | string |             |
 
 ## Responses
 
 - HTTP Status : 200 - OK
 
-  - Body
+  - 사용자 정보 수정 완료
 
     ```json
     {
       "id": <user_id>,
       "email":"<email>"
-    }
-    ```
-
-- HTTP Status : 400 - Bad Request
-
-  - 필수항목 입력값 누락 : 이메일
-
-    ```json
-    {
-      "email": [
-        "This field may not be blank."
-      ]
     }
     ```
 

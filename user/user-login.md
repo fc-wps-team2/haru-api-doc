@@ -33,7 +33,7 @@ key          | value           | type   | description
 
 - HTTP Status : 200 - OK
 
-  - Body
+  - 로그인 성공
 
     ```json
     {
@@ -59,3 +59,4 @@ key          | value           | type   | description
 - HTTP Status : 500 - Internal Server Error
 
   - 입력값 오류 : 이메일, 비밀번호
+  - 400 으로 변경 예정

@@ -48,7 +48,7 @@ status  | (기분상태 코드) | Integer | 1:기쁨, 2:나쁨, 3:그럭저럭, 
 
 - HTTP Status : 200 - OK
 
-  - Body
+  - 글 수정 성공
 
     ```json
     {

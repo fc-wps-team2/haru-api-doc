@@ -42,7 +42,7 @@ Authorization | `Token a35b9eb7e90d9ecdb5567183fb13f6b813cf2547`
 
 - HTTP Status : 200 - OK
 
-  - Body
+  - 사용자 정보 가져오기 성공
 
     ```json
     {

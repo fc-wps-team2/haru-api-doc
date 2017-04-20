@@ -2,7 +2,7 @@
 
 **Get Post List**
 
-- PAGE_SIZE : 9 (한 페이지에 9개의 글 표시)
+- PAGE_SIZE : 10 (한 페이지에 10개의 글 표시)
 
 - 첫 페이지 응답결과의 previous 값은 null
 
@@ -22,6 +22,10 @@ or
 
 `https://haru.ycsinabro.com/post/`
 
+**URL example :**
+
+`https://haru.ycsinabro.com/post/` `https://haru.ycsinabro.com/post/?page=2`
+
 ## Request
 
 ### Headers
@@ -38,73 +42,75 @@ Authorization | `Token a35b9eb7e90d9ecdb5567183fb13f6b813cf2547`
 
 ### Body
 
-- `None` : 첫번째 페이지 요청
+key  | value         | type    | description
+---- | ------------- | ------- | ----------------
+page | (page_number) | Integer | 미포함 시 첫번째 페이지 반환
 
-- `page` : 페이지 번호, 해당 페이지 요청
+가장 최근에 생성한 글이 상단에 표시 (post_id, descending)
 
 ## Responses
 
 - HTTP Status : 200 - OK
 
-  - Body
+  - 글 목록보기 성공, 글 목록 가져오기 성공
 
-  ```json
-  {
-    "count": <post_count>,
-    "next": "<next_page_url>",
-    "previous": null,
-    "results": [
-      {
-        "id": <post_id>,
-        "url": "<post_url>",
-        "day": "<date>",
-        "author": <user_id>,
-        "title": "<title>",
-        "content": "<content>",
-        "image": "<image_url>",
-        "status": <status_code>
-      },
+    ```json
+    {
+      "count": <post_count>,
+      "next": "<next_page_url>",
+      "previous": null,
+      "results": [
+        {
+          "id": <post_id>,
+          "url": "<post_url>",
+          "day": "<date>",
+          "author": <user_id>,
+          "title": "<title>",
+          "content": "<content>",
+          "image": "<image_url>",
+          "status": <status_code>
+        },
 
-      ...
+        ...
 
-    ]
-  }
-  ```
+      ]
+    }
+    ```
 
-  example :
+    example :
 
-  ```json
-  {
-    "count": 12,
-    "next": "http://haru.ycsinabro.com/post/?page=2",
-    "previous": null,
-    "results": [
-      {
-        "id": 29,
-        "url": "http://haru.ycsinabro.com/post/29/",
-        "day": "2017-04-20",
-        "author": 86,
-        "title": "제목",
-        "content": "내용",
-        "image": "https://harn-bucket.s3.amazonaws.com/media/post/django_3HmPgjm.jpg",
-        "status": 3
-      },
-      {
-        "id": 27,
-        "url": "http://haru.ycsinabro.com/post/27/",
-        "day": "2017-04-20",
-        "author": 86,
-        "title": "제목 updated",
-        "content": "내용",
-        "image": "https://harn-bucket.s3.amazonaws.com/media/post/django_b0r7GE7.jpg",
-        "status": 3
-      },
+    ```json
+    {
+      "count": 12,
+      "next": "http://haru.ycsinabro.com/post/?page=2",
+      "previous": null,
+      "results": [
+        {
+          "id": 29,
+          "url": "http://haru.ycsinabro.com/post/29/",
+          "day": "2017-04-20",
+          "author": 86,
+          "title": "제목",
+          "content": "내용",
+          "image": "https://harn-bucket.s3.amazonaws.com/media/post/django_3HmPgjm.jpg",
+          "status": 3
+        },
+        {
+          "id": 27,
+          "url": "http://haru.ycsinabro.com/post/27/",
+          "day": "2017-04-20",
+          "author": 86,
+          "title": "제목 updated",
+          "content": "내용",
+          "image": "https://harn-bucket.s3.amazonaws.com/media/post/django_b0r7GE7.jpg",
+          "status": 3
+        },
 
-      ...
+        ...
 
-    ]
-  }
-  ```
+      ]
+    }
+    ```
 
 - HTTP Status : 401 - Unauthorized
 
