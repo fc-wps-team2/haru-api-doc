@@ -2,19 +2,19 @@
 
 **Update Post**
 
-**URL :** `/post/<post_id>/`
+**URL :** `/post/{post_id}/`
 
-`https://<domain name>/post/<post_id>/`
+`https://{domain name}/post/{post_id}/`
 
 **Method :** `PATCH`
 
 **Running URL :**
 
-`http://haru-eb.ap-northeast-2.elasticbeanstalk.com/post/<post_id>/`
+`http://haru-eb.ap-northeast-2.elasticbeanstalk.com/post/{post_id}/`
 
 or
 
-`https://haru.ycsinabro.com/post/<post_id>/`
+`https://haru.ycsinabro.com/post/{post_id}/`
 
 **URL example :**
 
@@ -26,7 +26,7 @@ or
 
 key           | value
 ------------- | -------------------------
-Authorization | Token `<token key value>`
+Authorization | Token `{token key value}`
 
 **example :**
 
@@ -38,11 +38,11 @@ Authorization | `Token a35b9eb7e90d9ecdb5567183fb13f6b813cf2547`
 
 key     | value     | type    | description
 ------- | --------- | ------- | ------------------------------
-author  | (user_id) | Integer |                                |
-title   | (제목)      | String  |                                |
-content | (내용)      | String  |                                |
-image   | (이미지)     | File    |                                |
-status  | (기분상태 코드) | Integer | 1:기쁨, 2:나쁨, 3:그럭저럭, 4:짜증, 5:분노
+author  | {user_id} | Integer |                                |
+title   | {제목}      | String  |                                |
+content | {내용}      | String  |                                |
+image   | {이미지}     | File    |                                |
+status  | {기분상태 코드} | Integer | 1:기쁨, 2:나쁨, 3:그럭저럭, 4:짜증, 5:분노
 
 ## Responses
 
@@ -52,14 +52,14 @@ status  | (기분상태 코드) | Integer | 1:기쁨, 2:나쁨, 3:그럭저럭, 
 
     ```json
     {
-      "id": <post_id>,
-      "url": "http://haru.ycsinabro.com/post/<post_id>/",
-      "day": "<date>",
-      "author": <user_id>,
-      "title": "<title>",
-      "content": "<content>",
-      "image": "<image_url>",
-      "status": <status_code>
+      "id": {post_id},
+      "url": "http://haru.ycsinabro.com/post/{post_id}/",
+      "day": "{date}",
+      "author": {user_id},
+      "title": "{title}",
+      "content": "{content}",
+      "image": "{image_url}",
+      "status": {status_code}
     }
     ```
 
@@ -85,14 +85,14 @@ status  | (기분상태 코드) | Integer | 1:기쁨, 2:나쁨, 3:그럭저럭, 
     ```json
     {
       "status": [
-        "\"<입력한 status 값>\" is not a valid choice."
+        "\"{입력한 status 값}\" is not a valid choice."
       ]
     }
     ```
 
 - HTTP Status : 401 - Unauthorized
 
-  - Headers 에 Token 이 포함되지 않았을 경우, key name 이 잘못되었을 경우 (Authorization 외에 다른 이름 사용 시),
+  - Headers 에 Token 이 포함되지 않았을 경우, key name 이 잘못되었을 경우 (Authorization 외에 다른 이름 사용 시)
 
     ```json
     {

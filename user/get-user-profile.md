@@ -2,19 +2,19 @@
 
 **Get User Profile**
 
-**URL :** `/user/<user_id>/`
+**URL :** `/user/{user_id}/`
 
-`https://<domain name>/user/<user_id>/`
+`https://{domain name}/user/{user_id}/`
 
 **Method :** `GET`
 
 **Running URL :**
 
-`http://haru-eb.ap-northeast-2.elasticbeanstalk.com/user/<user_id>/`
+`http://haru-eb.ap-northeast-2.elasticbeanstalk.com/user/{user_id}/`
 
 or
 
-`https://haru.ycsinabro.com/user/<user_id>/`
+`https://haru.ycsinabro.com/user/{user_id}/`
 
 **URL example :**
 
@@ -26,7 +26,7 @@ or
 
 key           | value
 ------------- | -------------------------
-Authorization | Token `<token key value>`
+Authorization | Token `{token key value}`
 
 **example :**
 
@@ -46,8 +46,8 @@ Authorization | `Token a35b9eb7e90d9ecdb5567183fb13f6b813cf2547`
 
     ```json
     {
-      "id": <user_id>,
-      "email":"<email>"
+      "id": {user_id},
+      "email":"{email}"
     }
     ```
 

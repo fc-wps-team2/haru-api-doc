@@ -2,19 +2,19 @@
 
 **Delete Post**
 
-**URL :** `/post/<post_id>/`
+**URL :** `/post/{post_id}/`
 
-`https://<domain name>/post/<post_id>/`
+`https://{domain name}/post/{post_id}/`
 
 **Method :** `DELETE`
 
 **Running URL :**
 
-`http://haru-eb.ap-northeast-2.elasticbeanstalk.com/post/<post_id>/`
+`http://haru-eb.ap-northeast-2.elasticbeanstalk.com/post/{post_id}/`
 
 or
 
-`https://haru.ycsinabro.com/post/<post_id>/`
+`https://haru.ycsinabro.com/post/{post_id}/`
 
 **URL example :**
 
@@ -26,7 +26,7 @@ or
 
 key           | value
 ------------- | -------------------------
-Authorization | Token `<token key value>`
+Authorization | Token `{token key value}`
 
 **example :**
 

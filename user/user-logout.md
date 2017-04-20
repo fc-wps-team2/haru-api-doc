@@ -4,7 +4,7 @@
 
 **URL :** `/logout/`
 
-`https://<domain name>/logout/`
+`https://{domain name}/logout/`
 
 **Method :** `POST`
 
@@ -22,7 +22,7 @@ or
 
 key           | value
 ------------- | -------------------------
-Authorization | Token `<token key value>`
+Authorization | Token `{token key value}`
 
 **example :**
 
