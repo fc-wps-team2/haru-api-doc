@@ -12,6 +12,8 @@ Login
 
 `http://haru-eb.ap-northeast-2.elasticbeanstalk.com/login/`
 
+or
+
 `https://haru.ycsinabro.com/login/`
 
 ## Request

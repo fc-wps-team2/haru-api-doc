@@ -12,7 +12,9 @@ Create User
 
 `http://haru-eb.ap-northeast-2.elasticbeanstalk.com/signup/`
 
-`https://haru.ycsinabro.com/singup/`
+or
+
+`https://haru.ycsinabro.com/signup/`
 
 ## Request
 
