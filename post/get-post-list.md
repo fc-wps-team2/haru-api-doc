@@ -1,6 +1,6 @@
 # 글 목록보기
 
-Get Post List
+**Get Post List**
 
 - PAGE_SIZE : 9 (한 페이지에 9개의 글 표시)
 
@@ -8,15 +8,19 @@ Get Post List
 
 - 마지막 페이지 응답결의 next 값은 null
 
-**URL :** `/posts`
+**URL :** `/post/`
+
+`https://<domain name>/post/`
 
 **Method :** `GET`
 
-**URL example :**
+**Running URL :**
 
-`http://<domain name>/api/posts`
+`http://haru-eb.ap-northeast-2.elasticbeanstalk.com/post/`
 
-`http://<domain name>/api/posts?page=2`
+or
+
+`https://haru.ycsinabro.com/post/`
 
 ## Request
 
@@ -46,40 +50,74 @@ Authorization | `Token a35b9eb7e90d9ecdb5567183fb13f6b813cf2547`
 
   ```json
   {
-    "count": 11,
-    "next": null,
-    "previous": "http://<domain name>/api/posts?page=1",
+    "count": <post_count>,
+    "next": "<next_page_url>",
+    "previous": null,
     "results": [
       {
-        "id": 10,
-        "author": {
-          "id": 1,
-          "email": "<email>"
-        },
-        "title": "title 10",
-        "content": "content 10",
-        "image_link": "http://www.djangoproject.com/s/img/logos/django-logo-negative.svg",
-        "status_code": 2,
-        "created_date": "2017-04-14T11:30:15.000Z"
+        "id": <post_id>,
+        "url": "<post_url>",
+        "day": "<date>",
+        "author": <user_id>,
+        "title": "<title>",
+        "content": "<content>",
+        "image": "<image_url>",
+        "status": <status_code>
       },
-      {
-        "id": 11,
-        "author": {
-          "id": 1,
-          "email": "<email>"
-        },
-        "title": "title 11",
-        "content": "content 11",
-        "image_link": "http://www.djangoproject.com/s/img/logos/django-logo-negative.svg",
-        "status_code": 2,
-        "created_date": "2017-04-14T11:31:15.000Z"
-      }
+
+      ...
+
     ]
   }
   ```
 
-- HTTP Status : 400 - Bad Request
+  example :
 
-- HTTP Status : 404 - Not Found
+  ```json
+  {
+    "count": 12,
+    "next": "http://haru.ycsinabro.com/post/?page=2",
+    "previous": null,
+    "results": [
+      {
+        "id": 29,
+        "url": "http://haru.ycsinabro.com/post/29/",
+        "day": "2017-04-20",
+        "author": 86,
+        "title": "제목",
+        "content": "내용",
+        "image": "https://harn-bucket.s3.amazonaws.com/media/post/django_3HmPgjm.jpg",
+        "status": 3
+      },
+      {
+        "id": 27,
+        "url": "http://haru.ycsinabro.com/post/27/",
+        "day": "2017-04-20",
+        "author": 86,
+        "title": "제목 updated",
+        "content": "내용",
+        "image": "https://harn-bucket.s3.amazonaws.com/media/post/django_b0r7GE7.jpg",
+        "status": 3
+      },
 
-  - 유효하지 않은 user_id로 요청함
+      ...
+
+    ]
+  }
+  ```
+
+- HTTP Status : 401 - Unauthorized
+
+  - 유효하지 않은 Token 으로 요청함
+
+    ```json
+    {
+      "detail": "Invalid token."
+    }
+    ```
+
+- HTTP Status : 500 - Internal Server Error
+
+  - Headers 에 Token 이 포함되지 않았을 경우, Token 형식이 잘못되었을 경우
+  - key name 이 잘못되었을 경우 (Authorization 외에 다른 이름 사용 시)
+  - 401 로 수정 예정

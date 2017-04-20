@@ -1,12 +1,24 @@
 # 글 상세보기
 
-Get Post Detail
+**Get Post Detail**
 
-**URL :** `/posts/{post_id}`
+**URL :** `/post/<post_id>/`
+
+`https://<domain name>/post/<post_id>/`
 
 **Method :** `GET`
 
-**URL example :** `https://<domain name>/api/posts/{post_id}`
+**Running URL :**
+
+`http://haru-eb.ap-northeast-2.elasticbeanstalk.com/post/<post_id>/`
+
+or
+
+`https://haru.ycsinabro.com/post/<post_id>/`
+
+**URL example :**
+
+`https://haru.ycsinabro.com/post/22/`
 
 ## Request
 
@@ -34,19 +46,62 @@ Authorization | `Token a35b9eb7e90d9ecdb5567183fb13f6b813cf2547`
 
     ```json
     {
-      "id": 1,
-      "author": {
-        "id": 1,
-        "email": "<email>"
-      },
-      "title": "test title",
-      "content": "test content",
-      "image_link": "https://www.djangoproject.com/s/img/logos/django-logo-negative.svg",
-      "status_code": 2,
-      "created_date": "2017-04-14T11:12:52.000Z"
+      "id": <post_id>,
+      "url": "http://haru.ycsinabro.com/post/<post_id>/",
+      "day": "<date>",
+      "author": <user_id>,
+      "title": "<title>",
+      "content": "<content>",
+      "image": "<image_url>",
+      "status": <status_code>
+    }
+    ```
+
+    example :
+
+    ```json
+    {
+      "id": 22,
+      "url": "http://haru.ycsinabro.com/post/22/",
+      "day": "2017-04-20",
+      "author": 86,
+      "title": "제목",
+      "content": "내용",
+      "image": "https://harn-bucket.s3.amazonaws.com/media/post/django_wnXBhjK.jpg",
+      "status": 3
+    }
+    ```
+
+- HTTP Status : 401 - Unauthorized
+
+  - key name 이 잘못되었을 경우 (Authorization 외에 다른 이름 사용 시)
+
+    ```json
+    {
+      "detail": "Authentication credentials were not provided."
+    }
+    ```
+
+  - 유효하지 않은 Token 으로 요청함
+
+    ```json
+    {
+      "detail": "Invalid token."
     }
     ```
 
 - HTTP Status : 404 - Not Found
 
-  - 유효하지 않은 user_id로 요청함
+  - 유효하지 않은 post_id 로 요청함
+
+    ```json
+    {
+      "detail": "Not found."
+    }
+    ```
+
+- HTTP Status : 500 - Internal Server Error
+
+  - Headers 에 Token 이 포함되지 않았을 경우, Token 형식이 잘못되었을 경우
+
+  - 401 로 수정 예정

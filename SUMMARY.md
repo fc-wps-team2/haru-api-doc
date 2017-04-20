@@ -10,7 +10,7 @@
 - [로그인](/user/user-login.md)
 - [로그아웃](/user/user-logout.md)
 - [프로필 보기](/user/get-user-profile.md)
-- [프로필 수정](/user/update-user-profile.md)
+- [프로필 수정 (not yet)](/user/update-user-profile.md)
 
 ## Post
 

@@ -14,11 +14,11 @@
 
 **형식** : `https://<domain name>/`
 
-**Example** : `https://haru.ycsinabro.com/`
+**Example URL** : `https://haru.ycsinabro.com/`
 
 ## 개발환경
 
-- Python
+- Python 3.4.3
 - Django
 - Django REST Framework
 
@@ -26,16 +26,11 @@
 
 ### v1
 
-- Server : Amazon EC2
-- DB : Amazon RDS (PostgreSQL)
-
-### v2 (예정)
-
 - Server : AWS Elastic Beanstalk
 - DB : Amazon RDS (PostgreSQL)
 - Storage : Amazon S3
 
-### v3(예정)
+### v2(예정)
 
 - Server : Heroku
 

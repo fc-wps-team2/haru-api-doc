@@ -1,12 +1,12 @@
 # 로그인
 
-Login
+**Login**
 
 **URL :** `/login/`
 
-**Method :** `POST`
+`https://<domain name>/login/`
 
-**URL example :** `https://<domain name>/login/`
+**Method :** `POST`
 
 **Running URL :**
 

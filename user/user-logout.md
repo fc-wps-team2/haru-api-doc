@@ -1,12 +1,12 @@
 # 로그아웃
 
-Logout
+**Logout**
 
 **URL :** `/logout/`
 
-**Method :** `POST`
+`https://<domain name>/logout/`
 
-**URL example :** `https://<domain name>/logout/`
+**Method :** `POST`
 
 **Running URL :**
 
@@ -46,7 +46,7 @@ Authorization | `Token a35b9eb7e90d9ecdb5567183fb13f6b813cf2547`
 
 - HTTP Status : 401 - Unauthorized
 
-  - Headers 에 Token 값을 포함하여 요청하지 않았을 경우, key 이름 또는 값 형식이 잘못되었을 경우
+  - Headers 에 Token 이 포함되지 않았을 경우, key name 이 잘못되었을 경우 (Authorization 외에 다른 이름 사용 시)
 
     ```json
     {
@@ -54,7 +54,7 @@ Authorization | `Token a35b9eb7e90d9ecdb5567183fb13f6b813cf2547`
     }
     ```
 
-  - 유효하지 않은 Token 값으로 요청
+  - 유효하지 않은 Token 으로 요청함
 
     ```json
     {

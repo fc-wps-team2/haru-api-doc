@@ -1,12 +1,12 @@
 # 회원가입
 
-Create User
+**Create User**
 
 **URL :** `/signup/`
 
-**Method :** `POST`
+`https://<domain name>/singup/`
 
-**URL example :** `https://<domain name>/singup/`
+**Method :** `POST`
 
 **Running URL :**
 
@@ -37,8 +37,17 @@ key          | value           | type   | description
 
     ```json
     {
-      "id": 1,
+      "id": <user_id>,
       "email": "<email>"
+    }
+    ```
+
+    example :
+
+    ```json
+    {
+      "id": 86,
+      "email":"test@jeeyong.kr"
     }
     ```
 

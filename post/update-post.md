@@ -1,12 +1,24 @@
 # 글 수정
 
-Update Post
+**Update Post**
 
-**URL :** `/posts/{post_id}`
+**URL :** `/post/<post_id>/`
+
+`https://<domain name>/post/<post_id>/`
 
 **Method :** `PATCH`
 
-**URL example :** `https://<domain name>/api/posts/{post_id}`
+**Running URL :**
+
+`http://haru-eb.ap-northeast-2.elasticbeanstalk.com/post/<post_id>/`
+
+or
+
+`https://haru.ycsinabro.com/post/<post_id>/`
+
+**URL example :**
+
+`https://haru.ycsinabro.com/post/22/`
 
 ## Request
 
@@ -24,13 +36,13 @@ Authorization | `Token a35b9eb7e90d9ecdb5567183fb13f6b813cf2547`
 
 ### Body
 
-- title : 제목, String
-
-- content : 내용, String
-
-- image : 이미지, File
-
-- status_code : 기분상태 코드, Integer
+key     | value     | type    | description
+------- | --------- | ------- | ------------------------------
+author  | (user_id) | Integer |                                |
+title   | (제목)      | String  |                                |
+content | (내용)      | String  |                                |
+image   | (이미지)     | File    |                                |
+status  | (기분상태 코드) | Integer | 1:기쁨, 2:나쁨, 3:그럭저럭, 4:짜증, 5:분노
 
 ## Responses
 
@@ -40,27 +52,68 @@ Authorization | `Token a35b9eb7e90d9ecdb5567183fb13f6b813cf2547`
 
     ```json
     {
-      "id": 1,
-      "author": {
-        "id": 1,
-        "email": "<email>"
-      },
-      "title": "test title",
-      "content": "test content",
-      "image_link": "https://www.djangoproject.com/s/img/logos/django-logo-negative.svg",
-      "status_code": 2,
-      "created_date": "2017-04-14T11:12:52.000Z"
+      "id": <post_id>,
+      "url": "http://haru.ycsinabro.com/post/<post_id>/",
+      "day": "<date>",
+      "author": <user_id>,
+      "title": "<title>",
+      "content": "<content>",
+      "image": "<image_url>",
+      "status": <status_code>
     }
     ```
 
-- HTTP Status : 400 - Bad Request
+    example :
 
-  - 필수항목 입력값 누락 : 이메일, 비밀번호
+    ```json
+    {
+      "id": 22,
+      "url": "http://haru.ycsinabro.com/post/22/",
+      "day": "2017-04-20",
+      "author": 86,
+      "title": "제목 updated",
+      "content": "내용",
+      "image": "https://harn-bucket.s3.amazonaws.com/media/post/django_gbq5I4K.jpg",
+      "status": 3
+    }
+    ```
+
+- HTTP Status : 404 - Bad Request
+
+  - status 에 유효하지 않은 값(1~5 이외의 값)이 포함되었을 경우
+
+    ```json
+    {
+      "status": [
+        "\"<입력한 status 값>\" is not a valid choice."
+      ]
+    }
+    ```
 
 - HTTP Status : 401 - Unauthorized
 
-  - 유효하지 않은 Token으로 요청함
+  - Headers 에 Token 이 포함되지 않았을 경우, key name 이 잘못되었을 경우 (Authorization 외에 다른 이름 사용 시),
+
+    ```json
+    {
+      "detail": "Authentication credentials were not provided."
+    }
+    ```
+
+  - 유효하지 않은 Token 으로 요청함
+
+    ```json
+    {
+      "detail": "Invalid token."
+    }
+    ```
 
 - HTTP Status : 404 - Not Found
 
-  - 유효하지 않은 user_id로 요청함
+  - 유효하지 않은 user_id 로 요청함
+
+    ```json
+    {
+      "detail": "Not found."
+    }
+    ```

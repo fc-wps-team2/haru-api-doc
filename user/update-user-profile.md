@@ -1,12 +1,24 @@
 # 사용자 프로필 수정
 
-Update User Profile
+**Update User Profile**
 
-**URL :** `/users`
+**URL :** `/user/<user_id>/`
+
+`https://<domain name>/user/<user_id>/`
 
 **Method :** `PATCH`
 
-**URL example :** `https://<domain name>/api/users`
+**Running URL :**
+
+`http://haru-eb.ap-northeast-2.elasticbeanstalk.com/user/<user_id>/`
+
+or
+
+`https://haru.ycsinabro.com/user/<user_id>/`
+
+**URL example :**
+
+`https://haru.ycsinabro.com/user/86/`
 
 ## Request
 
@@ -37,17 +49,37 @@ key          | value           | type   | description
 
     ```json
     {
-      "id": 1,
-      "email":"<email>",
-      "password": "<password>",
-      "created_date": "2017-04-14T11:06:21.000Z"
+      "id": <user_id>,
+      "email":"<email>"
     }
     ```
 
 - HTTP Status : 400 - Bad Request
 
-  - 필수항목 입력값 누락 : 이메일, 비밀번호
+  - 필수항목 입력값 누락 : 이메일
+
+    ```json
+    {
+      "email": [
+        "This field may not be blank."
+      ]
+    }
+    ```
 
 - HTTP Status : 401 - Unauthorized
 
-  - 유효하지 않은 Token으로 요청함
+  - Headers 에 Token 이 포함되지 않았을 경우, key name 이 잘못되었을 경우 (Authorization 외에 다른 이름 사용 시)
+
+    ```json
+    {
+      "detail": "Authentication credentials were not provided."
+    }
+    ```
+
+  - 유효하지 않은 Token 으로 요청함
+
+    ```json
+    {
+      "detail": "Invalid token."
+    }
+    ```
