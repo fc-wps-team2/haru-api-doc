@@ -44,6 +44,8 @@ content    | `<내용>`      | String  |
 image      | `<이미지>`     | File    |
 **status** | `<기분상태 코드>` | Integer | **필수** 1:기쁨, 2:나쁨, 3:그럭저럭, 4:짜증, 5:분노
 
+`<user_id>` : [사용자 프로필 보기](/user/get-user-profile.md) 에서 획득 
+
 ## Responses
 
 - HTTP Status : 201 - Created

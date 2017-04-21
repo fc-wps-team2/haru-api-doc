@@ -11,7 +11,6 @@
 - [로그아웃](/user/user-logout.md)
 - [프로필 보기](/user/get-user-profile.md)
 - [프로필 수정 (not yet)](/user/update-user-profile.md)
-- [사용자 목록 보기(테스트용)](/user/get-user-list.md)
 
 ## Post
 
