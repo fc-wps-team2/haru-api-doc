@@ -36,12 +36,13 @@ Authorization | `Token a35b9eb7e90d9ecdb5567183fb13f6b813cf2547`
 
 ### Body
 
-key    | value     | type    | description
------- | --------- | ------- | ------------------------------
-author | <user_id> | Integer |
-title  | <제목>      | String  |
-image  | <이미지>     | File    |
-status | <기분상태 코드> | Integer | 1:기쁨, 2:나쁨, 3:그럭저럭, 4:짜증, 5:분노
+key        | value       | type    | description
+---------- | ----------- | ------- | ------------------------------
+**author** | `<user_id>` | Integer | **필수**
+title      | `<제목>`      | String  |
+content    | `<내용>`      | String  |
+image      | `<이미지>`     | File    |
+status     | `<기분상태 코드>` | Integer | 1:기쁨, 2:나쁨, 3:그럭저럭, 4:짜증, 5:분노
 
 ## Responses
 
