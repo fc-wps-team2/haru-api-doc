@@ -4,7 +4,7 @@
 
 **URL :** `/signup/`
 
-`https://{domain name}/singup/`
+`https://<domain name>/singup/`
 
 **Method :** `POST`
 
@@ -26,8 +26,8 @@ or
 
 key          | value           | type   | description
 ------------ | --------------- | ------ | -----------
-  **email**    | {user email}    | string | 필수
-  **password** | {user password} | string | 필수
+**email**    | `<user email>`    | string | 필수
+**password** | `<user password>` | string | 필수
 
 ## Responses
 
@@ -37,8 +37,8 @@ key          | value           | type   | description
 
     ```json
     {
-      "id": {user_id},
-      "email": "{email}"
+      "id": <user_id>,
+      "email": "<email>"
     }
     ```
 

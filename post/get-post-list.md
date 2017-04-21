@@ -10,7 +10,7 @@
 
 **URL :** `/post/`
 
-`https://{domain name}/post/`
+`https://<domain name>/post/`
 
 **Method :** `GET`
 
@@ -24,7 +24,9 @@ or
 
 **URL example :**
 
-`https://haru.ycsinabro.com/post/` `https://haru.ycsinabro.com/post/?page=2`
+`https://haru.ycsinabro.com/post/`
+
+`https://haru.ycsinabro.com/post/?page=2`
 
 ## Request
 
@@ -32,7 +34,7 @@ or
 
 key           | value
 ------------- | -------------------------
-Authorization | Token `{token key value}`
+Authorization | Token `<token key value>`
 
 **example :**
 
@@ -44,7 +46,7 @@ Authorization | `Token a35b9eb7e90d9ecdb5567183fb13f6b813cf2547`
 
 key  | value         | type    | description
 ---- | ------------- | ------- | ----------------
-page | {page_number} | Integer | 미포함 시 첫번째 페이지 반환
+page | `<page_number>` | Integer | 미포함 시 첫번째 페이지 반환
 
 가장 최근에 생성한 글이 상단에 표시 (post_id, descending)
 
@@ -54,25 +56,25 @@ page | {page_number} | Integer | 미포함 시 첫번째 페이지 반환
 
   - 글 목록보기 성공, 글 목록 가져오기 성공
 
-    {next_page_url} : 다음 페이지가 없을 경우 null
+    `<next_page_url>` : 다음 페이지가 없을 경우 null
 
-    {previous_page_url} : 이전 페이지가 없을 경우 null
+    `<previous_page_url>` : 이전 페이지가 없을 경우 null
 
     ```json
     {
-      "count": {post_count},
-      "next": "{next_page_url}",
-      "previous": "{previous_page_url}",
+      "count": <post_count>,
+      "next": "<next_page_url>",
+      "previous": "<previous_page_url>",
       "results": [
         {
-          "id": {post_id},
-          "url": "{post_url}",
-          "day": "{date}",
-          "author": {user_id},
-          "title": "{title}",
-          "content": "{content}",
-          "image": "{image_url}",
-          "status": {status_code}
+          "id": <post_id>,
+          "url": "<post_url>",
+          "day": "<date>",
+          "author": <user_id>,
+          "title": "<title>",
+          "content": "<content>",
+          "image": "<image_url>",
+          "status": <status_code>
         },
 
         ...

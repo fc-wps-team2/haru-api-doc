@@ -2,19 +2,19 @@
 
 **Get Post Detail**
 
-**URL :** `/post/{post_id}/`
+**URL :** `/post/<post_id>/`
 
-`https://{domain name}/post/{post_id}/`
+`https://<domain name>/post/<post_id>/`
 
 **Method :** `GET`
 
 **Running URL :**
 
-`http://haru-eb.ap-northeast-2.elasticbeanstalk.com/post/{post_id}/`
+`http://haru-eb.ap-northeast-2.elasticbeanstalk.com/post/<post_id>/`
 
 or
 
-`https://haru.ycsinabro.com/post/{post_id}/`
+`https://haru.ycsinabro.com/post/<post_id>/`
 
 **URL example :**
 
@@ -26,7 +26,7 @@ or
 
 key           | value
 ------------- | -------------------------
-Authorization | Token `{token key value}`
+Authorization | Token `<token key value>`
 
 **example :**
 
@@ -46,14 +46,14 @@ Authorization | `Token a35b9eb7e90d9ecdb5567183fb13f6b813cf2547`
 
     ```json
     {
-      "id": {post_id},
-      "url": "http://haru.ycsinabro.com/post/{post_id}/",
-      "day": "{date}",
-      "author": {user_id},
-      "title": "{title}",
-      "content": "{content}",
-      "image": "{image_url}",
-      "status": {status_code}
+      "id": <post_id>,
+      "url": "http://haru.ycsinabro.com/post/<post_id>/",
+      "day": "<date>",
+      "author": <user_id>,
+      "title": "<title>",
+      "content": "<content>",
+      "image": "<image_url>",
+      "status": <status_code>
     }
     ```
 

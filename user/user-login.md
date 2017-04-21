@@ -4,7 +4,7 @@
 
 **URL :** `/login/`
 
-`https://{domain name}/login/`
+`https://<domain name>/login/`
 
 **Method :** `POST`
 
@@ -26,8 +26,8 @@ or
 
 key          | value           | type   | description
 ------------ | --------------- | ------ | -----------
-**email**    | {user email}    | string | 필수
-**password** | {user password} | string | 필수
+**email**    | `<user email>`    | string | 필수
+**password** | `<user password>` | string | 필수
 
 ## Responses
 

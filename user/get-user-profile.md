@@ -2,23 +2,23 @@
 
 **Get User Profile**
 
-**URL :** `/user/{user_id}/`
+**URL :** `/user/`
 
-`https://{domain name}/user/{user_id}/`
+`https://<domain name>/user/`
 
 **Method :** `GET`
 
 **Running URL :**
 
-`http://haru-eb.ap-northeast-2.elasticbeanstalk.com/user/{user_id}/`
+`http://haru-eb.ap-northeast-2.elasticbeanstalk.com/user/`
 
 or
 
-`https://haru.ycsinabro.com/user/{user_id}/`
+`https://haru.ycsinabro.com/user/`
 
 **URL example :**
 
-`https://haru.ycsinabro.com/user/86/`
+`https://haru.ycsinabro.com/user/`
 
 ## Request
 
@@ -26,7 +26,7 @@ or
 
 key           | value
 ------------- | -------------------------
-Authorization | Token `{token key value}`
+Authorization | Token `<token key value>`
 
 **example :**
 
@@ -46,8 +46,15 @@ Authorization | `Token a35b9eb7e90d9ecdb5567183fb13f6b813cf2547`
 
     ```json
     {
-      "id": {user_id},
-      "email":"{email}"
+      "count": 1,
+      "next": null,
+      "previous": null,
+      "results": [
+        {
+          "id": <user_id>,
+          "email": "test@jeeyong.kr"
+        }
+      ]
     }
     ```
 
@@ -55,8 +62,15 @@ Authorization | `Token a35b9eb7e90d9ecdb5567183fb13f6b813cf2547`
 
     ```json
     {
-      "id": 86,
-      "email":"test@jeeyong.kr"
+      "count": 1,
+      "next": null,
+      "previous": null,
+      "results": [
+        {
+          "id": 26,
+          "email": "test@jeeyong.kr"
+        }
+      ]
     }
     ```
 
@@ -75,15 +89,5 @@ Authorization | `Token a35b9eb7e90d9ecdb5567183fb13f6b813cf2547`
     ```json
     {
       "detail": "Invalid token."
-    }
-    ```
-
-- HTTP Status : 404 - Not Found
-
-  - 유효하지 않은 user_id 로 요청
-
-    ```json
-    {
-      "detail": "Not found."
     }
     ```

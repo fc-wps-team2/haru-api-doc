@@ -4,7 +4,7 @@
 
 **URL :** `/post/`
 
-`https://{domain name}/post/`
+`https://<domain name>/post/`
 
 **Method :** `POST`
 
@@ -26,7 +26,7 @@ or
 
 key           | value
 ------------- | -------------------------
-Authorization | Token `{token key value}`
+Authorization | Token `<token key value>`
 
 **example :**
 
@@ -36,13 +36,14 @@ Authorization | `Token a35b9eb7e90d9ecdb5567183fb13f6b813cf2547`
 
 ### Body
 
-key        | value     | type    | description
----------- | --------- | ------- | --------------------------------------
-**author** | {user_id} | Integer | **필수**
-**title**  | {제목}      | String  | **필수**
-content    | {내용}      | String  |                                        |
-image      | {이미지}     | File    |                                        |
-**status** | {기분상태 코드} | Integer | **필수**, 1:기쁨, 2:나쁨, 3:그럭저럭, 4:짜증, 5:분노
+key        | value                | type | description
+---------- | -------------------- | ---- | -----------
+**author** | <user_id>
+</user_id>
+
+
+
+| Integer | **필수** **title** | <제목> | String | **필수** content | <내용> | String | image | <이미지> | File | **status** | <기분상태 코드> | Integer | **필수**, 1:기쁨, 2:나쁨, 3:그럭저럭, 4:짜증, 5:분노
 
 ## Responses
 
@@ -52,14 +53,14 @@ image      | {이미지}     | File    |                                        
 
     ```json
     {
-      "id": {post_id},
-      "url": "http://haru.ycsinabro.com/post/{post_id}/",
-      "day": "{date}",
-      "author": {user_id},
-      "title": "{title}",
-      "content": "{content}",
-      "image": "{image_url}",
-      "status": {status_code}
+      "id": <post_id>,
+      "url": "http://haru.ycsinabro.com/post/<post_id>/",
+      "day": "<date>",
+      "author": <user_id>,
+      "title": "<title>",
+      "content": "<content>",
+      "image": "<image_url>",
+      "status": <status_code>
     }
     ```
 
