@@ -66,9 +66,20 @@ Authorization | `Token a35b9eb7e90d9ecdb5567183fb13f6b813cf2547`
     }
     ```
 
+  - Headers 에 Token 이 포함되지 않았을 경우
+
+    ```json
+    {
+      "count": 0,
+      "next": null,
+      "previous": null,
+      "results": []
+    }
+    ```
+
 - HTTP Status : 401 - Unauthorized
 
-  - Headers 에 Token 이 포함되지 않았을 경우, key name 이 잘못되었을 경우 (Authorization 외에 다른 이름 사용 시)
+  - key name 이 잘못되었을 경우 (Authorization 외에 다른 이름 사용 시)
 
     ```json
     {
