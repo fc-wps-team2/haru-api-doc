@@ -16,17 +16,17 @@
 
 **Running URL :**
 
-`http://haru-eb.ap-northeast-2.elasticbeanstalk.com/post/`
-
-or
-
 `https://haru.ycsinabro.com/post/`
 
 **URL example :**
 
-`https://haru.ycsinabro.com/post/`
+- 기본 글 목록보기
 
-`https://haru.ycsinabro.com/post/?page=2`
+  `https://haru.ycsinabro.com/post/`
+
+- 2페이지 글 목록보기
+
+  `https://haru.ycsinabro.com/post/?page=2`
 
 ## Request
 
@@ -44,8 +44,8 @@ Authorization | `Token a35b9eb7e90d9ecdb5567183fb13f6b813cf2547`
 
 ### Body
 
-key  | value         | type    | description
----- | ------------- | ------- | ----------------
+key  | value           | type    | description
+---- | --------------- | ------- | ----------------
 page | `<page_number>` | Integer | 미포함 시 첫번째 페이지 반환
 
 가장 최근에 생성한 글이 상단에 표시 (post_id, descending)

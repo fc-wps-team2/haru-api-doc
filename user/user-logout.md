@@ -10,10 +10,6 @@
 
 **Running URL :**
 
-`http://haru-eb.ap-northeast-2.elasticbeanstalk.com/logout/`
-
-or
-
 `https://haru.ycsinabro.com/logout/`
 
 ## Request

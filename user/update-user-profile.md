@@ -10,10 +10,6 @@
 
 **Running URL :**
 
-`http://haru-eb.ap-northeast-2.elasticbeanstalk.com/user/<user_id>/`
-
-or
-
 `https://haru.ycsinabro.com/user/<user_id>/`
 
 **URL example :**
@@ -36,9 +32,9 @@ Authorization | `Token a35b9eb7e90d9ecdb5567183fb13f6b813cf2547`
 
 ### Body
 
-key   | value        | type   | description
------ | ------------ | ------ | -----------
-email | `<user email>` | string |
+key   | value          | type   | description
+----- | -------------- | ------ | -----------
+email | `<user email>` | string | -
 
 ## Responses
 

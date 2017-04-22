@@ -10,10 +10,6 @@
 
 **Running URL :**
 
-`http://haru-eb.ap-northeast-2.elasticbeanstalk.com/post/<post_id>/`
-
-or
-
 `https://haru.ycsinabro.com/post/<post_id>/`
 
 **URL example :**

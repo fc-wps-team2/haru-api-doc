@@ -10,14 +10,6 @@
 
 **Running URL :**
 
-`http://haru-eb.ap-northeast-2.elasticbeanstalk.com/post/`
-
-or
-
-`https://haru.ycsinabro.com/post/`
-
-**URL example :**
-
 `https://haru.ycsinabro.com/post/`
 
 ## Request
@@ -40,11 +32,11 @@ key        | value       | type    | description
 ---------- | ----------- | ------- | -------------------------------------
 **author** | `<user_id>` | Integer | **필수**
 **title**  | `<제목>`      | String  | **필수**
-content    | `<내용>`      | String  |
-image      | `<이미지>`     | File    |
+content    | `<내용>`      | String  | -
+image      | `<이미지>`     | File    | -
 **status** | `<기분상태 코드>` | Integer | **필수** 1:기쁨, 2:나쁨, 3:그럭저럭, 4:짜증, 5:분노
 
-`<user_id>` : [사용자 프로필 보기](/user/get-user-profile.md) 에서 획득 
+**<user_id>** : [사용자 프로필 보기](/user/get-user-profile.md) 에서 획득 
 
 ## Responses
 

@@ -10,10 +10,6 @@
 
 **Running URL :**
 
-`http://haru-eb.ap-northeast-2.elasticbeanstalk.com/signup/`
-
-or
-
 `https://haru.ycsinabro.com/signup/`
 
 ## Request
@@ -24,8 +20,8 @@ or
 
 ### Body
 
-key          | value           | type   | description
------------- | --------------- | ------ | -----------
+key          | value             | type   | description
+------------ | ----------------- | ------ | -----------
 **email**    | `<user email>`    | string | 필수
 **password** | `<user password>` | string | 필수
 
