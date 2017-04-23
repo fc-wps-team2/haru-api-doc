@@ -66,8 +66,11 @@ Authorization | `Token a35b9eb7e90d9ecdb5567183fb13f6b813cf2547`
     }
     ```
 
-  - Headers 에 Token 이 포함되지 않았을 경우
+  - **Headers 에 Token 이 포함되지 않았을 경우**
 
+    key           | value
+    ------------- | ------------------------------------------------
+    Authorization | `null`
     ```json
     {
       "count": 0,
