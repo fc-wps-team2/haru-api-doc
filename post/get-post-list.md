@@ -74,7 +74,8 @@ page | `<page_number>` | Integer | 미포함 시 첫번째 페이지 반환
           "title": "<title>",
           "content": "<content>",
           "image": "<image_url>",
-          "status": <status_code>
+          "status": <status_code>,
+          "created_date": "<datetime>"
         },
 
         ...
@@ -87,29 +88,31 @@ page | `<page_number>` | Integer | 미포함 시 첫번째 페이지 반환
 
     ```json
     {
-      "count": 12,
+      "count": 15,
       "next": "http://haru.ycsinabro.com/post/?page=2",
       "previous": null,
       "results": [
         {
-          "id": 29,
-          "url": "http://haru.ycsinabro.com/post/29/",
+          "id": 17,
+          "url": "http://haru.ycsinabro.com/post/17/",
+          "day": "2017-04-20",
+          "author": 86,
+          "title": "제목",
+          "content": "내",
+          "image": "https://harn-bucket.s3.amazonaws.com/media/post/django.jpg",
+          "status": 3,
+          "created_date": "2017-04-24T11:08:23.145134Z"
+        },
+        {
+          "id": 18,
+          "url": "http://haru.ycsinabro.com/post/18/",
           "day": "2017-04-20",
           "author": 86,
           "title": "제목",
           "content": "내용",
-          "image": "https://harn-bucket.s3.amazonaws.com/media/post/django_3HmPgjm.jpg",
-          "status": 3
-        },
-        {
-          "id": 27,
-          "url": "http://haru.ycsinabro.com/post/27/",
-          "day": "2017-04-20",
-          "author": 86,
-          "title": "제목 updated",
-          "content": "내용",
-          "image": "https://harn-bucket.s3.amazonaws.com/media/post/django_b0r7GE7.jpg",
-          "status": 3
+          "image": "https://harn-bucket.s3.amazonaws.com/media/post/django_a7Ec3Xv.jpg",
+          "status": 3,
+          "created_date": "2017-04-24T11:08:23.145134Z"
         },
 
         ...
@@ -145,7 +148,8 @@ page | `<page_number>` | Integer | 미포함 시 첫번째 페이지 반환
             "title": "제목",
             "content": "내용",
             "image": "https://harn-bucket.s3.amazonaws.com/media/post/django_uCXq4CL.jpg",
-            "status": 3
+            "status": 3,
+            "created_date": "2017-04-24T11:08:23.145134Z"
           }
         ]
       }

@@ -57,7 +57,8 @@ status     | `<기분상태 코드>` | Integer | 1:기쁨, 2:나쁨, 3:그럭저
       "title": "<title>",
       "content": "<content>",
       "image": "<image_url>",
-      "status": <status_code>
+      "status": <status_code>,
+      "created_date": "<datetime>"
     }
     ```
 
@@ -72,7 +73,8 @@ status     | `<기분상태 코드>` | Integer | 1:기쁨, 2:나쁨, 3:그럭저
       "title": "제목 updated",
       "content": "내용",
       "image": "https://harn-bucket.s3.amazonaws.com/media/post/django_gbq5I4K.jpg",
-      "status": 3
+      "status": 3,
+      "created_date": "2017-04-24T11:08:23.145134Z"
     }
     ```
 
@@ -115,3 +117,7 @@ status     | `<기분상태 코드>` | Integer | 1:기쁨, 2:나쁨, 3:그럭저
       "detail": "Not found."
     }
     ```
+
+- HTTP Status : 413 - Request Entity Too Large
+
+  - 업로드한 이미지 용량이 너무 큰 경우 (1,024 KB 를 초과하는 파일을 사용 시)

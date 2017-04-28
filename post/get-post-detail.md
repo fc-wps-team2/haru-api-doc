@@ -49,7 +49,8 @@ Authorization | `Token a35b9eb7e90d9ecdb5567183fb13f6b813cf2547`
       "title": "<title>",
       "content": "<content>",
       "image": "<image_url>",
-      "status": <status_code>
+      "status": <status_code>,
+      "created_date": "<datetime>"
     }
     ```
 
@@ -57,14 +58,15 @@ Authorization | `Token a35b9eb7e90d9ecdb5567183fb13f6b813cf2547`
 
     ```json
     {
-      "id": 22,
-      "url": "http://haru.ycsinabro.com/post/22/",
-      "day": "2017-04-20",
+      "id": 295,
+      "url": "http://haru.ycsinabro.com/post/295/",
+      "day": "2017-04-28",
       "author": 86,
       "title": "제목",
       "content": "내용",
-      "image": "https://harn-bucket.s3.amazonaws.com/media/post/django_wnXBhjK.jpg",
-      "status": 3
+      "image": "https://harn-bucket.s3.amazonaws.com/media/post/django_SxCcgMn.jpg",
+      "status": 3,
+      "created_date": "2017-04-28T07:55:16.722571Z"
     }
     ```
 

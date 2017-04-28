@@ -42,10 +42,14 @@
 
 ### Back-end
 
+<https://github.com/fc-wps-team2/haru>
+
 - 노지용
 - 변영철
 
 ### Front-end
+
+<https://github.com/amorfati0310/Haru_front>
 
 - 변승환
 - 송낙현
